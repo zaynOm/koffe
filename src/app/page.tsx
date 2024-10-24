@@ -1,5 +1,6 @@
 import Hero from "./components/hero";
 import Listings from "./components/listings";
+import Reviews from "./components/reviews";
 import Search from "./components/search";
 
 export default function Home() {
@@ -9,6 +10,7 @@ export default function Home() {
         <Hero />
         <Search />
         <Listings />
+        <Reviews />
       </div>
     </main>
   );
