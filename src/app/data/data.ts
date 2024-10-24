@@ -16,14 +16,6 @@ export const data = [
     price: 4.25,
   },
   {
-    id: 3,
-    title: "Espresso",
-    description:
-      "A strong and rich coffee made by forcing pressurized hot water through finely ground coffee beans.",
-    image: "/espresso.jpg",
-    price: 2.75,
-  },
-  {
     id: 4,
     title: "Espresso",
     description:
