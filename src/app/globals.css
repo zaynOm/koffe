@@ -2,26 +2,50 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@media (prefers-color-scheme: dark) {
+@layer base {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --old-copper-50: 39 38% 95%; /* #f8f5ee */
+    --old-copper-100: 39 52% 82%; /* #eee7d3 */
+    --old-copper-200: 37 57% 77%; /* #dfcea9 */
+    --old-copper-300: 35 52% 63%; /* #ccaf78 */
+    --old-copper-400: 33 52% 53%; /* #bd9252 */
+    --old-copper-500: 32 55% 47%; /* #ae7f44 */
+    --old-copper-600: 27 45% 40%; /* #956539 */
+    --old-copper-700: 20 43% 34%; /* #7a4e31 */
+    --old-copper-800: 17 37% 29%; /* #65402e */
+    --old-copper-900: 14 32% 26%; /* #58372b */
+    --old-copper-950: 17 37% 14%; /* #321d16 */
+
+    --background: 0 0% 100%;
+    --foreground: 0 10% 4%;
+    --primary: var(--old-copper-700);
+
+    --button-bg: var(--old-copper-700);
+    --button-fg: var(--old-copper-50);
   }
 }
 
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
-}
+/**/
+/* :root { */
+/*   --background: #ffffff; */
+/*   --foreground: #171717; */
+/* } */
+/**/
+/* @media (prefers-color-scheme: dark) { */
+/*   :root { */
+/*     --background: #0a0a0a; */
+/*     --foreground: #ededed; */
+/*   } */
+/* } */
+/**/
+/* body { */
+/*   color: var(--foreground); */
+/*   background: var(--background); */
+/*   font-family: Arial, Helvetica, sans-serif; */
+/* } */
+/**/
+/* @layer utilities { */
+/*   .text-balance { */
+/*     text-wrap: balance; */
+/*   } */
+/* } */
