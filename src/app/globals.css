@@ -25,6 +25,14 @@
   }
 }
 
+@layer utilities {
+  @media (max-width: 640px) {
+    .container {
+      @apply px-4;
+    }
+  }
+}
+
 /**/
 /* :root { */
 /*   --background: #ffffff; */
