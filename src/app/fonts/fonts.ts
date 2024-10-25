@@ -2,12 +2,12 @@ import { Bricolage_Grotesque } from "next/font/google";
 import localFont from "next/font/local";
 
 export const geistSans = localFont({
-  src: "./fonts/GeistVF.woff",
+  src: "./GeistVF.woff",
   variable: "--font-geist-sans",
   weight: "100 900",
 });
 export const geistMono = localFont({
-  src: "./fonts/GeistMonoVF.woff",
+  src: "./GeistMonoVF.woff",
   variable: "--font-geist-mono",
   weight: "100 900",
 });
