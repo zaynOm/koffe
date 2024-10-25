@@ -17,13 +17,8 @@ export function Search({ searchQuery, setSearchQuery }: SearchProps) {
           placeholder="What do you want to drink?"
           className="h-14 flex-1 bg-transparent focus:outline-none text-lg "
           value={searchQuery}
-          onChange={(e) => {
-            ref.current?.scrollIntoView({
-              behavior: "smooth",
-              block: "start",
-            });
-            setSearchQuery(e.target.value);
-          }}
+          onChange={(e) => setSearchQuery(e.target.value)}
+          onFocus={() => ref.current?.scrollIntoView({ behavior: "smooth" })}
         />
       </div>
     </div>
