@@ -20,7 +20,7 @@ type ReviewProps = (typeof data)[0];
 function ReviewCard({ item }: { item: ReviewProps }) {
   return (
     // TODO: add bg patterns
-    <div className="bg-gray-300 rounded-2xl p-4 sm:p-10 flex flex-col justify-between gap-y-6">
+    <div className="bg-gray-300 rounded-3xl p-4 sm:p-10 flex flex-col justify-between gap-y-6">
       <p className="font-display text-2xl sm:text-4xl font-bold">
         ”{item.comment}
       </p>
