@@ -1,9 +1,9 @@
 "use client";
 import Image from "next/image";
-import { Coffee, data } from "../data/data";
 import { useState } from "react";
-import { Search } from "./search";
+import { Coffee, data } from "../data/data";
 import useDebounce from "../hooks/useDebounce";
+import { Search } from "./search";
 
 function Card({ item }: { item: Coffee }) {
   return (
