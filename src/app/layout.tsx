@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { bricolageGrotesque, geistMono, geistSans } from "./fonts/fonts";
 import "./globals.css";
 import Navbar from "./components/navbar";
+import Footer from "./components/footer";
 
 export const metadata: Metadata = {
   title: "Koffe",
@@ -20,6 +21,7 @@ export default function RootLayout({
       >
         <Navbar />
         {children}
+        <Footer />
       </body>
     </html>
   );
