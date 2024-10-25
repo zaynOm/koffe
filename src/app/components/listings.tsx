@@ -7,7 +7,7 @@ import { Search } from "./search";
 
 function Card({ item }: { item: Coffee }) {
   return (
-    <div className="space-y-6">
+    <div className="space-y-6 cursor-pointer">
       <div className="h-72 relative overflow-clip rounded-3xl border-8 border-background drop-shadow-2xl">
         {/* TODO: add discount badge */}
         <Image
