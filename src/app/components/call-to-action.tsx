@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function CallToAction() {
   return (
-    <div className="bg-primary min-h-80 rounded-3xl flex justify-between lg:justify-evenly items-center p-4 md:p-10 text-gray-50">
+    <div className="bg-primary min-h-80 my-52 rounded-3xl flex justify-between lg:justify-evenly items-center p-4 md:p-10 text-gray-50">
       <Image
         src="/cup-icon.svg"
         alt="coffee cup icon"
