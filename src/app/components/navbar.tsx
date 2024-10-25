@@ -6,7 +6,7 @@ export default function Navbar() {
       <div className="container flex justify-between items-center h-16">
         <div>
           <Link href="/" className="font-display text-3xl font-bold">
-            koffe
+            koffee
           </Link>
         </div>
         <menu className="space-x-4 font-medium hidden sm:block">
