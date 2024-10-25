@@ -1,11 +1,13 @@
 "use client";
-
 import Image from "next/image";
 import { Coffee, data } from "../data/data";
+import { useState } from "react";
+import { Search } from "./search";
+import useDebounce from "../hooks/useDebounce";
 
 function Card({ item }: { item: Coffee }) {
   return (
-    <div className="space-y-6 px-4 ">
+    <div className="space-y-6">
       <div className="h-72 relative overflow-clip rounded-3xl border-8 border-background drop-shadow-2xl">
         {/* TODO: add discount badge */}
         <Image
@@ -13,6 +15,7 @@ function Card({ item }: { item: Coffee }) {
           alt={item.title}
           className="object-cover object-center rounded-2xl"
           fill
+          sizes="200px"
         />
       </div>
       <div className="px-4 space-y-4">
@@ -29,11 +32,21 @@ function Card({ item }: { item: Coffee }) {
 }
 
 export default function Listings() {
+  const [searchQuery, setSearchQuery] = useState("");
+  const debounceInput = useDebounce(searchQuery);
+
+  const filteredListings = data.filter((item) =>
+    item.title.toLowerCase().includes(debounceInput.toLowerCase()),
+  );
+
   return (
-    <div className="py-24 grid sm:grid-cols-2 gap-6 xl:grid-cols-3">
-      {data.map((item) => (
-        <Card key={item.id} item={item} />
-      ))}
+    <div>
+      <Search searchQuery={searchQuery} setSearchQuery={setSearchQuery} />
+      <div className="py-24 grid sm:grid-cols-2 gap-6 xl:grid-cols-3">
+        {filteredListings.map((item) => (
+          <Card key={item.id} item={item} />
+        ))}
+      </div>
     </div>
   );
 }
