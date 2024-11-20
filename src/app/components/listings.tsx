@@ -15,7 +15,7 @@ function Card({ item }: { item: Coffee }) {
           alt={item.title}
           className="object-cover object-center rounded-2xl"
           fill
-          sizes="200px"
+          sizes="720px"
         />
       </div>
       <div className="px-4 space-y-4">
