@@ -31,6 +31,7 @@ function ReviewCard({ item }: { item: ReviewProps }) {
           className="object-cover rounded-full h-16"
           width={64}
           height={64}
+          sizes='500px'
         />
         <div>
           <p className="font-bold text-gray-700 text-lg">{item.name}</p>
